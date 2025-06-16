@@ -1482,80 +1482,31 @@ elif page == "📈 Model Analysis":
         - 🔬 Multilingual hate speech detection capabilities
         """)
 
-# Footer and Application End
-# [Previous code continues...]
 
 # Footer and Application End
 st.markdown("---")
 
-# Project completion summary
-st.markdown(f"""
-<div style='text-align: center; padding: 2rem; background-color: #f8f9fa; border-radius: 10px; margin: 2rem 0;'>
-    <h2 style='color: #1f77b4; margin-bottom: 1rem;'>🎓 Project Completion Summary</h2>
-    
-    <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;'>
-        <div style='background-color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
-            <h4 style='color: #28a745; margin: 0;'>✅ Requirements Met</h4>
-            <p style='margin: 0.5rem 0 0 0; font-size: 0.9rem;'>All 4 pages implemented with comprehensive analysis</p>
-        </div>
-        
-        <div style='background-color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
-            <h4 style='color: #007bff; margin: 0;'>🧠 Models Evaluated</h4>
-            <p style='margin: 0.5rem 0 0 0; font-size: 0.9rem;'>3 transformer models with TensorFlow implementation</p>
-        </div>
-        
-        <div style='background-color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
-            <h4 style='color: #ffc107; margin: 0;'>⚙️ Optimization Complete</h4>
-            <p style='margin: 0.5rem 0 0 0; font-size: 0.9rem;'>Keras Tuner hyperparameter search with 20 trials</p>
-        </div>
-        
-        <div style='background-color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
-            <h4 style='color: #17a2b8; margin: 0;'>📊 Analysis Depth</h4>
-            <p style='margin: 0.5rem 0 0 0; font-size: 0.9rem;'>Comprehensive EDA, error analysis, and justification</p>
-        </div>
-    </div>
-    
-    <div style='margin-top: 2rem; padding: 1rem; background-color: #e9ecef; border-radius: 8px;'>
-        <h3 style='color: #343a40; margin: 0 0 1rem 0;'>📋 Evaluation Rubric Compliance</h3>
-        <div style='text-align: left; max-width: 600px; margin: 0 auto;'>
-            <p><strong>1. Problem Definition & Dataset (10 pts):</strong> ✅ Clear hate speech detection problem with well-documented dataset challenges</p>
-            <p><strong>2. Inference Interface (10 pts):</strong> ✅ Interactive interface with 3 models, confidence scores, and real-time TensorFlow inference</p>
-            <p><strong>3. Dataset Visualization (10 pts):</strong> ✅ Comprehensive EDA with class distribution, text analysis, and word clouds</p>
-            <p><strong>4. Hyperparameter Tuning (10 pts):</strong> ✅ Keras Tuner optimization with parameter importance and performance tracking</p>
-            <p><strong>5. Model Analysis (35 pts):</strong> ✅ Complete evaluation with classification reports, confusion matrix, error analysis, and justification</p>
-        </div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
-
 # Technical specifications
-st.markdown("""
-<div style='background-color: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;'>
-    <h3 style='color: #495057; margin-top: 0;'>🔧 Technical Implementation Details</h3>
-    <div style='display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;'>
-        <div>
-            <h4 style='color: #007bff;'>Framework & Libraries</h4>
-            <ul style='margin: 0; padding-left: 1.2rem;'>
-                <li>TensorFlow 2.x with Keras for model implementation</li>
-                <li>Streamlit for interactive web application</li>
-                <li>Plotly for advanced data visualizations</li>
-                <li>Scikit-learn for evaluation metrics</li>
-                <li>Pandas & NumPy for data processing</li>
-            </ul>
-        </div>
-        <div>
-            <h4 style='color: #28a745;'>Model Architecture</h4>
-            <ul style='margin: 0; padding-left: 1.2rem;'>
-                <li>Custom Transformer with Multi-Head Attention</li>
-                <li>Positional encoding for sequence understanding</li>
-                <li>Optimized for social media text processing</li>
-                <li>847K parameters for efficient inference</li>
-                <li>F1-score optimization for imbalanced data</li>
-            </ul>
-        </div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+st.subheader("🔧 Technical Implementation Details")
+
+with st.container():
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("**Framework & Libraries**")
+        st.write("• TensorFlow 2.x with Keras for model implementation")
+        st.write("• Streamlit for interactive web application") 
+        st.write("• Plotly for advanced data visualizations")
+        st.write("• Scikit-learn for evaluation metrics")
+        st.write("• Pandas & NumPy for data processing")
+    
+    with col2:
+        st.markdown("**Model Architecture**")
+        st.write("• Custom Transformer with Multi-Head Attention")
+        st.write("• Positional encoding for sequence understanding")
+        st.write("• Optimized for social media text processing")
+        st.write("• 847K parameters for efficient inference")
+        st.write("• F1-score optimization for imbalanced data")
 
 # Final footer with student information
 st.markdown(f"""
