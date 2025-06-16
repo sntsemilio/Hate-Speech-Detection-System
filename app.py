@@ -1544,10 +1544,3 @@ if st.button("🔚 End Session & Cleanup", type="secondary"):
         del st.session_state[key]
     
     st.rerun()
-
-# Final status display
-st.markdown("""
-<div style='position: fixed; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.8); color: white; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; z-index: 1000;'>
-    🛡️ Hate Speech Detection System | Status: Active | Models: Loaded
-</div>
-""", unsafe_allow_html=True)
