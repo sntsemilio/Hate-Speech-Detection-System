@@ -1516,20 +1516,6 @@ st.markdown(f"""
     <p style='margin: 0.5rem 0;'><strong>Project:</strong> Hate Speech Detection using Custom Transformer Architecture</p>
     <p style='margin: 0.5rem 0;'><strong>Completed:</strong> 2025-06-15 22:00:37 UTC</p>
     <p style='margin: 0.5rem 0;'><strong>Framework:</strong> TensorFlow 2.x | Streamlit | Keras Tuner</p>
-    
-    <div style='margin-top: 1.5rem; padding: 1rem; background-color: #e7f3ff; border-radius: 6px; display: inline-block;'>
-        <h5 style='color: #0066cc; margin: 0 0 0.5rem 0;'>🎓 Academic Achievement</h5>
-        <p style='margin: 0; font-size: 0.9rem;'>
-            This project demonstrates comprehensive understanding of:<br>
-            • Deep Learning for NLP • Transformer Architecture • Hyperparameter Optimization<br>
-            • Model Evaluation • Data Visualization • Production Deployment
-        </p>
-    </div>
-    
-    <hr style='margin: 1.5rem auto; width: 50%; border: 1px solid #dee2e6;'>
-    <p style='margin: 0; font-size: 0.8rem; font-style: italic;'>
-        "Building responsible AI systems for a safer digital world" 🛡️
-    </p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -1544,3 +1530,10 @@ if st.button("🔚 End Session & Cleanup", type="secondary"):
         del st.session_state[key]
     
     st.rerun()
+
+# Final status display
+st.markdown("""
+<div style='position: fixed; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.8); color: white; padding: 0.5rem; border-radius: 5px; font-size: 0.8rem; z-index: 1000;'>
+    🛡️ Hate Speech Detection System | Status: Active | Models: Loaded
+</div>
+""", unsafe_allow_html=True)
