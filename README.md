@@ -8,7 +8,7 @@ This repository contains the final project for **TC2034.302** course, implementi
 
 **Student**: Jose Emilio Gomez Santos (@sntsemilio)  
 **Completed**: June 15, 2025  
-**Course**: TC2034.302 - Advanced Algorithms and Data Structures
+
 
 ## Key Features
 
@@ -66,7 +66,7 @@ streamlit run app.py
 ## Project Structure
 
 ```
-TC2034.302-Final-project/
+Hate-detectio-system/
 ├── app.py                           # Main Streamlit application
 ├── basic_hate_speach_model.ipynb    # Jupyter notebook with model development
 ├── LICENSE                          # MIT License
